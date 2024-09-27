@@ -6,7 +6,6 @@ interface Props {
 const {title} = Astro.props;
 ---
 
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -17,19 +16,21 @@ const {title} = Astro.props;
     <title>{title}</title>
 </head>
 <body>
+<nav class="bg-black w-full h-20">
+</nav>
 <slot/>
 </body>
 </html>
 <style is:global>
     html, main {
         @apply text-white;
-        background: #181a18;
+        background: #070808;
     }
 
     :root {
-        --accent: #85d37e;
-        --accent-light: #c9f3bf;
-        --accent-dark: #df7572;
+        --accent: #33c5b2;
+        --accent-light: #33d9a1;
+        --accent-dark: #e76bc1;
         --accent-gradient: linear-gradient(
                 45deg,
                 rgb(var(--accent)),

@@ -3,13 +3,49 @@ import { Image } from "astro:assets";
 import markvilleLogo from "../assets/logos/markville-anime.png";
 import Sparkle from "./Sparkle.astro";
 import Aurora from "./Aurora.astro";
+import { motion } from "framer-motion";
+import { Icon } from "astro-icon/components";
+import hackClubFlag from "../assets/logos/flag-orpheus-top.png";
 ---
-<Aurora>
-    <div class="flex flex-col items-center orange-block">
-        <Image src={markvilleLogo} class="max-w-[50vh] mt-32 mb-12" alt="Hack Club Anime Logo"/>
-        <h1 class="text-8xl bg flex bg-gradient-to-r from-[#85d37e] via-[#c9f3bf] to-[#df7572] text-transparent bg-clip-text font-bold">
+<div class="relative">
+    <Image
+            src={hackClubFlag}
+            loading="eager"
+            class="absolute top-0 left-0 md:max-w-[50vh] xl:max-w-[20vh] hidden xl:block ml-12 z-10"
+            alt="Hack Club Orpheus Flag"
+    />
+    <Aurora/>
+    <div class="relative flex flex-col items-center">
+        <Image src={markvilleLogo}
+               loading="eager"
+               class="max-w-[90vw] md:max-w-[70vw] lg:max-w-[40vw] xl:max-w-[25vw] mt-12 md:mt-24 mb-4 lg:mb-12"
+               alt="Hack Club Anime Logo"/>
+        <h1 class="text-6xl md:text-7xl xl:text-8xl bg flex bg-gradient-to-r text-center from-[#33d9a1] via-[#68e8d7] to-[#b187f5] text-transparent bg-clip-text font-bold">
             Dev-Hack Club
-            <Sparkle class="text-6xl relative -top-6" color="#df7572"/>
+            <Sparkle class="text-6xl relative -top-4 xl:-top-6" color="#9b6be7"/>
+        </h1>
+        <h2 class="py-8 font-bold text-2xl text-center text-gray-200">Lorem ipsum dolor sit amet,<br> consectetur
+            adipisicing elit.</h2>
+        <motion.button client:load
+                       whileHover={{scale: 1.1, backgroundColor: "#bb569c"}}
+                       className="my-4 inline-flex font-bold text-xl py-4 px-8 items-center justify-center rounded-full bg-accent">
+            Join Now
+        </motion.button>
+        <h1 class="mt-24 flex text-xl items-center">
+            Learn More
+            <motion.span
+                    client:load
+                    className="ml-2"
+                    animate={{y: [0, -6, 0]}}
+                    transition={{
+                        duration: 1,
+                        ease: "easeInOut",
+                        repeat: 99999999,
+                        repeatType: "loop",
+                        bounce: 0.5
+                    }}>
+                <Icon name="ph:arrow-down" class="text-2xl"/>
+            </motion.span>
         </h1>
     </div>
-</Aurora>
+</div>
