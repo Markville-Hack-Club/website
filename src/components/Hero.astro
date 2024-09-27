@@ -2,12 +2,14 @@
 import { Image } from "astro:assets";
 import markvilleLogo from "../assets/logos/markville-anime.png";
 import Sparkle from "./Sparkle.astro";
+import Aurora from "./Aurora.astro";
 ---
-
-<div class="flex flex-col items-center orange-block">
-    <Image src={markvilleLogo} class="max-w-[50vh] mt-32 mb-12" alt="Hack Club Anime Logo"/>
-    <h1 class="text-8xl bg flex bg-gradient-to-r from-[#85d37e] via-[#c9f3bf] to-[#df7572] text-transparent bg-clip-text font-bold">
-        Dev-Hack Club
-        <Sparkle class="text-6xl relative -top-6" color="#df7572"/>
-    </h1>
-</div>
+<Aurora>
+    <div class="flex flex-col items-center orange-block">
+        <Image src={markvilleLogo} class="max-w-[50vh] mt-32 mb-12" alt="Hack Club Anime Logo"/>
+        <h1 class="text-8xl bg flex bg-gradient-to-r from-[#85d37e] via-[#c9f3bf] to-[#df7572] text-transparent bg-clip-text font-bold">
+            Dev-Hack Club
+            <Sparkle class="text-6xl relative -top-6" color="#df7572"/>
+        </h1>
+    </div>
+</Aurora>
