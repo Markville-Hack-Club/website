@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import placeholderImage from "../assets/images/placeholder.webp";
+---
+<div class="relative items-center text-center justify-center">
+    <div class="py-36 flex gap-4 justify-center items-center">
+        <hr class="w-1/6 border-gray-400"/>
+        <Icon name="ph:code" class="text-4xl text-gray-400"/>
+        <hr class="w-1/6 border-gray-400"/>
+    </div>
+    <h1 class="text-6xl font-bold">About Us</h1>
+    <div class="flex justify-center gap-12 mt-32">
+        <p class="text-xl w-[30%] text-left leading-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias exercitationem modi numquam optio voluptates? Cum cumque delectus deleniti dolorem dolorum eaque eius explicabo in, laborum placeat quo ratione sint voluptates? Beatae ipsum maxime officia porro ullam! Alias animi aperiam consequatur dolor dolorem eius eum fugit mollitia nam nostrum quisquam reprehenderit repudiandae, soluta totam veniam. Accusantium libero neque rem reprehenderit</p>
+        <Image src={placeholderImage} alt="placeholder" class="w-[30%]"/>
+    </div>
+    <div class="flex justify-center gap-12 mt-32">
+        <Image src={placeholderImage} alt="placeholder" class="w-[30%]"/>
+        <div class="w-[30%]">
+            <h2 class="text-3xl font-bold text-left mb-8">
+                Lorem ipsum dolor sit.
+            </h2>
+            <p class="text-xl text-left leading-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias exercitationem modi numquam optio voluptates? Cum cumque delectus deleniti dolorem dolorum eaque eius explicabo in, laborum placeat quo ratione sint voluptates? Beatae ipsum maxime officia porro ullam! Alias animi aperiam consequatur dolor dolorem eius eum fugit mollitia nam nostrum quisquam reprehenderit repudiandae, soluta totam veniam. Accusantium libero neque rem reprehenderit</p>
+        </div>
+    </div>
+</div>
