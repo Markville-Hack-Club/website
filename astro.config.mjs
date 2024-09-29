@@ -12,5 +12,4 @@ export default defineConfig({
     integrations: [tailwind({
         applyBaseStyles: false,
     }), icon(), react(), svelte()],
-    site: "https://markville-hack-club.github.io",
 });
