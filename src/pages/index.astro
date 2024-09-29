@@ -2,13 +2,19 @@
 import Layout from "../layouts/Layout.astro";
 import "@/styles/globals.css";
 import Hero from "../components/Hero.astro";
-import  About from "../components/About.astro";
+import About from "../components/About.svelte";
+import ClubFeatures from "../components/ClubFeatures.svelte";
+import Workshops from "../components/Workshops.svelte";
+import Info from "../components/Info.svelte";
+
 ---
 
-<Layout title="Markville Dev-Hack Club">
+<Layout title="Markville Dev/Hack Club">
     <main>
-        <div class="absolute w-full h-[200vh] bg-[#070808] -z-40"/>
         <Hero/>
         <About client:load/>
+        <ClubFeatures client:load/>
+        <Workshops client:load/>
+        <Info client:load/>
     </main>
 </Layout>
