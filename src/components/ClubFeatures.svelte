@@ -42,7 +42,7 @@
 </script>
 
 <div class="mt-64">
-    <h1 class="text-6xl font-bold text-center mb-20">What We Do</h1>
+    <h1 class="text-5xl md:text-6xl font-bold text-center mb-20">What We Do</h1>
     <BentoGrid>
         {#each items as item, i (i)}
             <BentoGridItem

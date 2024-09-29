@@ -3,8 +3,8 @@
 </script>
 
 <div class="mt-64 flex flex-col items-center pb-32">
-    <h1 class="text-6xl font-bold text-center mb-20" id="info">Join Us</h1>
-    <div class="flex flex-col lg:flex-row gap-32 lg:w-[80%] xl:w-[50%]">
+    <h1 class="text-5xl md:text-6xl font-bold text-center mb-20" id="info">Join Us</h1>
+    <div class="flex flex-col lg:flex-row gap-32 w-[90%] lg:w-[80%] xl:w-[50%]">
         <div class="flex-1 flex flex-col lg:items-end">
             <div>
                 <h2 class="text-4xl mb-12">Meeting Info</h2>

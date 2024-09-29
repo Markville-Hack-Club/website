@@ -14,7 +14,7 @@
 </script>
 
 <div class="mt-64 flex flex-col items-center">
-    <h1 class="text-5xl font-bold text-center mb-20">Some Of Our Activities/Workshops</h1>
+    <h1 class="text-4xl lg:text-5xl font-bold text-center mb-20">Some Of Our Activities/Workshops</h1>
     <div class="flex flex-col lg:flex-row justify-center text-center gap-16 w-[80%] lg:w-[60%]">
         <div class="flex-1 flex flex-col duration-500 hover:scale-110"
              class:blur={currentHoveredActivity !== -1 && currentHoveredActivity !== 0}
