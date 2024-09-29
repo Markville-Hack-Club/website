@@ -5,7 +5,7 @@
 </script>
 
 <div class="relative items-center text-center justify-center">
-    <div class="mt-52 mb-48 flex gap-4 justify-center items-center">
+    <div class="mt-56 mb-48 flex gap-4 justify-center items-center">
         <hr class="w-1/6 border-gray-400"/>
         <Icon icon="ph:code" class="text-4xl text-gray-400"/>
         <hr class="w-1/6 border-gray-400"/>
