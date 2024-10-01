@@ -4,6 +4,7 @@
 
 <div class="mt-64 flex flex-col items-center pb-32">
     <h1 class="text-5xl md:text-6xl font-bold text-center mb-20" id="info">Join Us</h1>
+    <!--TODO: Fix alignment for people using from the wrong zoom (150%)-->
     <div class="flex flex-col lg:flex-row gap-32 lg:w-[80%] xl:w-[50%] text-center">
         <div class="flex-1 flex flex-col lg:items-end">
             <div class="flex flex-col items-center md:items-start">
