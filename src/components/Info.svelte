@@ -15,7 +15,7 @@
                 </div>
                 <div class="mt-6 text-lg md:text-xl flex">
                     <span class="mr-4 md:mr-6"><Icon icon="octicon:rocket-16" class="text-2xl md:text-3xl"/> </span>
-                    <p>First meeting October 8th</p>
+                    <p>First meeting November 5th</p>
                 </div>
                 <div class="mt-6 text-lg md:text-xl flex">
                     <span class="mr-4 md:mr-6"><Icon icon="zondicons:location" class="text-2xl md:text-3xl"/> </span>
